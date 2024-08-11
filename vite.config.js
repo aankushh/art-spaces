@@ -6,8 +6,8 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/art-spaces/', // or '/' if deploying to the root
   plugins: [vue(), vueDevTools()],
-  base: '/dist',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
